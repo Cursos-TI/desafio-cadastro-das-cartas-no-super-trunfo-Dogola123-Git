@@ -188,7 +188,7 @@ int main(){
             scanf("%d", &resultado);
 
             compara();
-
+            
             if (resultado == 1)
             {
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
