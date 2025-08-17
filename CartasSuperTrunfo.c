@@ -149,8 +149,8 @@ int main(){
 
     //if (opcao = 1)
     //{
-        cadastro();
-        calculo();
+        cadastro(); //realiza o cadastro das cartas pelos valores inseridos
+        calculo(); //realiza o calcula de Densidade e PIB Per Capita
    // }else if (opcao = 2)
    // {
        // if (estado1 == NULL)
@@ -187,33 +187,70 @@ int main(){
             printf("Selecione o atributo que deseja comparar: \n 1- População \n 2- Area \n 3- PIB \n 4- Pontos Turisticos \n 5- Densidade Populacional \n 6- PIB Per Capita \n");
             scanf("%d", &resultado);
 
-            compara();
+            compara(); //COMPARA OS DADOS DAS VARIAVEIS
             
-            if (resultado == 1)
+            /*====RESULTADO COMPARANDO SOMENTE UM DOS ATRIBUTOS - SWITCH====*/
+
+            switch (resultado)
             {
+            case 1:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("População: A carta %s \n", resultPop);
-            } else if (resultado == 2)
-            {
+            break;
+            case 2:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("Area: A carta %s \n", resultArea);
-            }else if (resultado == 3)
-            {
+            break;
+            case 3:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("PIB: A carta %s \n", resultPIB);
-            }else if (resultado == 4)
-            {
+            break;
+            case 4:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("Pontos Turisticos: A carta %s \n", resultPonto);
-            }else if (resultado == 5)
-            {
+            break;
+            case 5:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("Densidade Populacional: A carta %s \n", resultDensidade);
-            }else if (resultado == 6)
-            {
+            break;
+            case 6:
                 printf("RESULTADOS DA COMPARAÇÃO: \n");
                 printf("PIB Per Capita; A carta %s \n", resultPIBPerCapita);
-            }       
+            break;
+            default:
+                printf("NENHUMA OPÇÃO VÁLIDA SELECIONADA");
+            break;
+            }
+
+            /*====RESULTADO COMPARANDO SOMENTE UM DOS ATRIBUTOS - IF ELSE====*/
+
+            //if (resultado == 1)
+            //{
+            //    printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("População: A carta %s \n", resultPop);
+            //} else if (resultado == 2)
+            //{
+            //    printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("Area: A carta %s \n", resultArea);
+            //}else if (resultado == 3)
+            //{
+            //    printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("PIB: A carta %s \n", resultPIB);
+            //}else if (resultado == 4)
+            //{
+            //    printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("Pontos Turisticos: A carta %s \n", resultPonto);
+            //}else if (resultado == 5)
+            //{
+            //   printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("Densidade Populacional: A carta %s \n", resultDensidade);
+            //}else if (resultado == 6)
+            //{
+            //    printf("RESULTADOS DA COMPARAÇÃO: \n");
+            //    printf("PIB Per Capita; A carta %s \n", resultPIBPerCapita);
+            //}  
+
+            /*====RESULTADO COMPARANDO TODOS OS ATRIBUTOS====*/
 
             //printf("RESULTADOS DA COMPARAÇÃO: \n");
             //printf("População: A carta %s \n", resultPop);
