@@ -1,4 +1,6 @@
-
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <time.h>
 
     int ID1 = 001;
     unsigned char estado1[2];
@@ -21,6 +23,10 @@
     char * resultPonto;
     char * resultDensidade;
     char * resultPIBPerCapita;
+
+    /* ANOTAÇÕES */
+    /* srand(time(0)) --> função de numeros aleatórios, considerando o tempo que rodou o programa*/
+    /* x = rand() % 10 --> número aleatório de 0 a 9*/
 
 void cadastro(){
     printf("CADASTRE A PRIMEIRA CARTA \n");
