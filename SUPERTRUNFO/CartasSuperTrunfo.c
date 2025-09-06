@@ -28,7 +28,10 @@
     /* srand(time(0)) --> função de numeros aleatórios, considerando o tempo que rodou o programa*/
     /* x = rand() % 10 --> número aleatório de 0 a 9*/
 
-    /* x = y > z ? 1 : 0 --> atribui a X a verificação se y é maior a z, caso sim, retorna 1, caso não, retorna 0*/
+    /*continue; --> continua o loop/repete o loope daquele ponto*/
+    /*break; --> encerra o loop*/
+    // \t concatena em tabela, enquanto \n pula linha
+    /* x = y > z ? 1 : 0 --> OPERADOR TERNARIO - atribui a X a verificação se y é maior a z, caso sim, retorna 1, caso não, retorna 0*/
 
 char menu(){
     do

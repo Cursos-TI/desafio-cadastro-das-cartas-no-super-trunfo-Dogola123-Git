@@ -17,6 +17,10 @@ int cantoBispo;
 //RAINHA
 int sentidoRainha;
 
+//CAVALO
+int i;
+int j;
+
 int main(){
     do {
     deslocamento = 0;
@@ -29,8 +33,10 @@ int main(){
     printf("1 - TORRE \n");
     printf("2 - BISPO \n");
     printf("3 - RAINHA \n");
+    printf("4 - CAVALO\n");
     printf("0 - SAIR \n");
     scanf("%d", &pecaSelecionada);
+    printf("\n");
 
     switch (pecaSelecionada)
     {
@@ -38,6 +44,7 @@ int main(){
         printf("SELECIONE QUAL TORRE DESEJA MOVIMENTAR: \n");
         printf("1 - CANTO DIREITO \n2 - CANTO ESQUERDO \n");
         scanf("%d", &cantoTorre);
+        printf("\n");
         switch (cantoTorre)
         {
         case 1: //TORRE DO CANTO DIREITO, VAI PARA A ESQUERDA OU PARA FRENTE
@@ -134,6 +141,7 @@ int main(){
         printf("SELECIONE QUAL BISPO DESEJA MOVIMENTAR: \n");
         printf("1 - CANTO DIREITO \n 2 - CANTO ESQUERDO \n");
         scanf("%d", &cantoBispo);
+        printf("\n");
         switch (cantoBispo)
         {
         case 1: //BISPO DO CANTO DIREITO, VAI NA DIAGONAL
@@ -232,6 +240,7 @@ int main(){
         printf("A RAINHA PODE ANDAR TANTO NA DIAGONAL, QUANTO NA HORIZONTAL E NA VERTICAL\n");
         printf("QUAL POSICAO DESEJA ANDAR ?\n1 - DIAGONAL\n2 - HORIZONTAL\n3 - VERTICAL\n");
         scanf("%d", &sentidoRainha);
+        printf("\n");
         switch (sentidoRainha)
         {
         case 1: //MOVIMENTA NA DIAGONAL
@@ -366,10 +375,125 @@ int main(){
             break;
         default:
             break;
-        }
-        
+        }     
         break;
     break;
+    case 4: //CAVALO
+        printf("O CAVALO SE MOVE EM L, SENDO DUAS CASAS A FRENTE E 1 AO LADO\n");
+        printf("QUAL POSICAO DESEJA ANDAR ?\n");
+        printf("1 - DUAS PARA FRENTE E UMA PARA ESQUERDA\n");
+        printf("2 - DUAS PARA FRENTE E UMA PARA DIREITA\n");
+        printf("3 - DUAS PARA A DIREITA E UMA PARA CIMA\n");
+        printf("4 - DUAS PARA A DIREITA E UMA PARA BAIXO\n");
+        printf("5 - DUAS PARA BAIXO E UMA PARA DIREITA\n");
+        printf("6 - DUAS PARA BAIXO E UMA PARA ESQUERDA\n");
+        printf("7 - DUAS PARA A ESQUERDA E UMA PARA CIMA\n");
+        printf("8 - DUAS PARA A ESQUERDA E UMA PARA BAIXO\n");
+        scanf("%d", &direcaoPeca);
+        printf("\n");
+        switch (direcaoPeca)
+        {
+        case 1: //DUAS PARA FRENTE E UMA PARA ESQUERDA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA FRENTE\n");
+                }
+                printf("DESLOCOU 1 CASA PARA A ESQUERDA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 2://DUAS PARA FRENTE E UMA PARA DIREITA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA FRENTE\n");
+                }
+                printf("DESLOCOU 1 CASA PARA A DIREITA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 3://DUAS PARA A DIREITA E UMA PARA CIMA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA DIREITA\n");
+                }
+                printf("DESLOCOU 1 CASA PARA A CIMA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 4://DUAS PARA A DIREITA E UMA PARA BAIXO
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA DIREITA\n");
+                }
+                printf("DESLOCOU 1 CASA PARA BAIXO\n");
+                printf("\n");
+                
+            }
+            break;
+        case 5://DUAS PARA BAIXO E UMA PARA DIREITA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA BAIXO\n");
+                }
+                printf("DESLOCOU 1 CASA PARA A DIREITA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 6://DUAS PARA BAIXO E UMA PARA ESQUERDA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA BAIXO\n");
+                }
+                printf("DESLOCOU 1 CASA PARA A ESQUERDA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 7://DUAS PARA A ESQUERDA E UMA PARA CIMA
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA ESQUERDA\n");
+                }
+                printf("DESLOCOU 1 CASA PARA CIMA\n");
+                printf("\n");
+                
+            }
+            break;
+        case 8://DUAS PARA A ESQUERDA E UMA PARA BAIXO
+            for (i = 1; i <= 1; i++)
+            {
+                for (int j = 0; j <= 1; j++)
+                {
+                    printf("DESLOCOU 1 CASA PARA A ESQUERDA\n");
+                }
+                printf("DESLOCOU 1 CASA PARA BAIXO\n");
+                printf("\n");
+                
+            }
+            break;
+        
+        default:
+            break;
+        }
+        break;
     default:
         break;
     }
