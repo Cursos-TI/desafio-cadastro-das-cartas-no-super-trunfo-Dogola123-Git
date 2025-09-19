@@ -4,16 +4,17 @@
 
 int main(){
     int jogador, maquina, opcao;
-
-    srand(time(0));
-
-    printf("BEM VINDO AO JOGO DE JO-KEN-PO \n");
-    printf("Selecione uma Opção: \n 1 - Jogar \n 2 - Regras \n 3 - Sair \n");
-    scanf("%d", &opcao);
-
-    switch (opcao)
+    do
     {
-    case 1:
+       srand(time(0));
+
+        printf("BEM VINDO AO JOGO DE JO-KEN-PO \n");
+        printf("Selecione uma Opção: \n 1 - Jogar \n 2 - Regras \n 3 - Sair \n");
+        scanf("%d", &opcao);
+
+        switch (opcao)
+        {
+        case 1:
         /* JOGAR */
         printf("Escolha uma jogada: \n 1 - Pedra \n 2 - Papel \n 3 - Tesoura \n");
         scanf("%d", &jogador);
@@ -103,7 +104,7 @@ int main(){
     break;
     case 2:
         /* REGRAS*/
-        printf("SÓ JOGAR");
+        printf("SÓ JOGAR \n");
     break;
     case 3:
         /* SAIR */
@@ -114,5 +115,7 @@ int main(){
         printf("Opção inválida!!! \n");
     break;
     }
+    } while (opcao != 3);
+    
     return 0;
 }
